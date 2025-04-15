@@ -227,7 +227,7 @@ body {
     gap: 24px;
   }
   .hand-icon{
-    width: 60px;
+    width: 80px;
   }
 }
 /* END INVEST */
@@ -247,9 +247,12 @@ body {
   .join-container{
     grid-column: 1/2;
     grid-row: 4/6;
+    padding: 24px 40px 135px 40px ;
+    border-radius: 16px;
   }
 }
 @media screen and (min-width: 1350px){}
+
 .dollar-big{
   position: absolute;
   right: 0;
@@ -264,6 +267,23 @@ body {
   position: absolute;
   left: 92px;
   bottom: 3px;
+}
+@media screen and (min-width: 768px){
+  .dollar-big{
+    width: 179px;
+    right: 0;
+    bottom: 1px;
+  }
+  .dollar-medium{
+    width: 108px;
+    left:8px;
+    bottom: 3px;
+  }
+  .dollar-small{
+    width: 55px;
+    left: 115px;
+    bottom: 3px;
+  }
 }
 /* END JOIN */
 
@@ -281,6 +301,8 @@ body {
   .grow-container{
     grid-column: 2/3;
     grid-row: 4/5;
+    padding: 32px;
+    border-radius: 16px;
   }
 }
 /* END GROW */
@@ -293,10 +315,21 @@ body {
   background-color: var(--security-background);
   border-radius: 8px;
 }
+.secure-icon{
+  width: 32px;
+}
 @media screen and (min-width: 768px){
   .security-container{
     grid-column: 2/3;
     grid-row: 5/6;
+    padding: 43.5px 32px 43.5px 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+  }
+  .secure-icon{
+    width: 80px;
+    flex-shrink: 0;
   }
 }
 /*END SECURITY */
@@ -310,18 +343,23 @@ body {
   background-color: var(--dark-background);
   border-radius: 8px;
 }
-@media screen and (min-width: 768px){
-  .reader-container{
-    grid-column: 2/3;
-    grid-row: 6/8;
-  }
-}
 .revolut-reader{
   position: absolute;
   right: 46px;
   bottom: 24px;
 }
 
+@media screen and (min-width: 768px){
+  .reader-container{
+    grid-column: 2/3;
+    grid-row: 6/8;
+    border-radius: 16px;
+    padding: 32px 40px 32px 40px;
+  }
+  .revolut-reader{
+    width: 187px;
+  }
+}
 /*END READER */
 
 /*KIDS*/
@@ -335,9 +373,18 @@ body {
 @media screen and (min-width: 768px){
   .kids-account-container{
     grid-column: 1/2;
-    grid-row: 6/8;
+    grid-row: 6/8;   
+    border-radius: 16px;
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding: 55px 40px 55px 40px;
+    gap: 32px;
+  }
+  .people-icon{
+    width: 80px;
   }
 }
+
 /*END KIDS */
 
 .pay-later-container{
